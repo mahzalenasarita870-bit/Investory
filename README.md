@@ -1,102 +1,49 @@
-
-
-
-#  MahzaGlow - Skincare Inventory Management System
+# **MahzaGlow - Skincare Inventory Management System**
 
 **MahzaGlow** adalah sistem manajemen inventaris produk *skincare* berbasis web yang dirancang dengan antarmuka **Fintech & SaaS Premium**. Aplikasi ini memudahkan pengelolaan katalog produk, pemantauan stok secara *real-time*, serta pencatatan transaksi barang masuk (*stock in*) dan barang keluar (*stock out*).
 
 ---
 
-## Fitur Utama
+## **📸 Tampilan Antarmuka Aplikasi**
 
-- **Dashboard Visual & Analytics**:
-  - Ringkasan total nilai aset inventaris secara *real-time*.
-  - Indikator varian produk, total stok unit, serta peringatan stok menipis (*low stock alert*).
-  - Filter cepat produk berdasarkan kategori.
+### **1. Halaman Login**
+![Halaman Login](img/login.jpg)
 
-- **Katalog Produk Terintegrasi**:
-  - Pencarian produk berdasarkan Nama atau Kode SKU.
-  - Tambah, Edit, dan Hapus data produk *skincare* (Khusus Akses Admin).
-  - Penanganan otomatis format harga Rupiah (contoh: `Rp 99.000`).
+### **2. Dashboard Utama**
+![Dashboard Utama](img/dasboard.jpg)
 
-- **Pencatatan Transaksi Stok (In/Out)**:
-  - **Barang Masuk (IN)**: Menambah stok otomatis saat terjadi *restock* dari distributor/supplier.
-  - **Barang Keluar (OUT)**: Mengurangi stok otomatis saat terjadi penjualan atau pengiriman pesanan.
-  - Validasi stok otomatis untuk mencegah pengeluaran melebihi sisa stok yang ada.
+### **3. Katalog Skincare**
+![Katalog Skincare](img/katalog.jpg)
 
-- **Sistem Keamanan & Autentikasi**:
-  - Akses berbasis peran (*Role-Based Access*: **Admin** & **Staff**).
-  - Fitur *Auto-Recovery Login* yang memulihkan atau membuat akun `admin` secara otomatis jika terjadi masalah pada tabel/database.
-  - Perlindungan terhadap kerentanan XSS (*Cross-Site Scripting*) dan SQL Injection.
+### **4. Pencatatan Barang Masuk (IN)**
+![Barang Masuk](img/barangmasuk.jpg)
+
+### **5. Pencatatan Barang Keluar (OUT)**
+![Barang Keluar](img/barang%20keluar.jpg)
+
+### **6. Formulir Edit Produk**
+![Edit Produk](img/edit.jpg)
 
 ---
 
-## Teknologi yang Digunakan
+## **🚀 Fitur Utama & Spesifikasi Sistem**
 
-- **Backend**: PHP 7.4+ (PDO Engine)
-- **Database**: MySQL / MariaDB
-- **Frontend**: HTML5, CSS3 Modern (Glassmorphism, Flexbox, CSS Grid)
-- **Tipografi**: Plus Jakarta Sans (Google Fonts)
-
----
-
-##  Struktur Folder Proyek
-
-
-```
-
-inventory-app/
-├── config/
-│   └── db.php               # Konfigurasi koneksi database PDO
-├── helpers/
-│   ├── auth.php             # Fungsi autentikasi & perizinan role
-│   ├── escape.php           # Helper sanitasi XSS & formatRupiah()
-│   └── validation.php       # Helper validasi input data
-├── public/
-│   ├── assets/
-│   │   └── style.css        # Desain CSS terpusat Fintech/SaaS
-│   ├── stock/
-│   │   ├── in.php           # Formulir & logika transaksi Barang Masuk
-│   │   └── out.php          # Formulir & logika transaksi Barang Keluar
-│   ├── create.php           # Form tambah produk baru
-│   ├── dashboard.php        # Halaman utama Ringkasan Inventaris
-│   ├── delete.php           # Skrip penghapusan produk
-│   ├── edit.php             # Form ubah data produk
-│   ├── index.php            # Halaman Katalog Produk
-│   ├── login.php            # Halaman autentikasi pengelola
-│   └── logout.php           # Skrip keluar dari sistem
-└── README.md                # Dokumentasi proyek
-
-```
+| **Kategori** | **Detail Modul / Fitur** |
+| :--- | :--- |
+| **Dashboard Visual & Analytics** | - **Ringkasan total nilai aset inventaris secara real-time.**<br>- **Indikator varian produk, total stok unit, serta peringatan stok menipis (low stock alert).**<br>- **Filter cepat produk berdasarkan kategori.** |
+| **Katalog Produk Terintegrasi** | - **Pencarian produk berdasarkan Nama atau Kode SKU.**<br>- **Tambah, Edit, dan Hapus data produk skincare (Khusus Akses Admin).**<br>- **Penanganan otomatis format harga Rupiah (contoh: `Rp 99.000`).** |
+| **Pencatatan Transaksi Stok** | - **Barang Masuk (IN): Menambah stok otomatis saat terjadi restock dari supplier.**<br>- **Barang Keluar (OUT): Mengurangi stok otomatis saat terjadi penjualan.**<br>- **Validasi stok otomatis untuk mencegah pengeluaran melebihi sisa stok.** |
+| **Keamanan & Autentikasi** | - **Akses berbasis peran (Role-Based Access: Admin & Staff).**<br>- **Fitur Auto-Recovery Login untuk akun admin.**<br>- **Perhitungan sanitasi input dari kerentanan XSS dan SQL Injection.** |
+| **Teknologi yang Digunakan** | - **Backend: PHP 7.4+ (PDO Engine)**<br>- **Database: MySQL / MariaDB**<br>- **Frontend: HTML5, CSS3 Modern (Glassmorphism, Flexbox, CSS Grid)**<br>- **Tipografi: Plus Jakarta Sans (Google Fonts)** |
 
 ---
 
-## Panduan Instalasi & Penggunaan
+## **⚙️ Panduan Instalasi & Penggunaan (Satu Tabel)**
 
-### 1. Persyaratan Sistem
-- Server Lokal: **XAMPP / Laragon / WAMP**
-- PHP versi **7.4** atau yang lebih baru
-- Database **MySQL**
-
-### 2. Langkah Setup
-1. Unduh atau salin folder proyek `inventory-app` ke dalam direktori server lokal Anda:
-   - XAMPP: `C:/xampp/htdocs/inventory-app/`
-2. Buka **phpMyAdmin** (`http://localhost/phpmyadmin/`) lalu buat database baru bernama `inventory_db`.
-3. Buat tabel utama yang dibutuhkan (`users`, `categories`, `products`, `stock_movements`).
-4. Jalankan Apache dan MySQL melalui control panel (XAMPP/Laragon).
-
-### 3. Login Pengujian
-Buka browser lalu navigasikan ke:
-`http://localhost/inventory-app/public/login.php`
-
-Gunakan kredensial pengujian berikut:
-- **Username**: `admin`
-- **Password**: `password`
-- **Role**: Admin (Akses Penuh)
-
----
-
-## Lisensi & Hak Cipta
-Dikembangkan untuk **MahzaGlow Skincare System**. Bebas disesuaikan dan dikembangkan lebih lanjut untuk kebutuhan manajemen inventaris toko/brand skincare.
-
-```
+| **Langkah / Modul** | **Instruksi Lengkap & Kredensial** |
+| :--- | :--- |
+| **1. Persyaratan Sistem** | **Pastikan perangkat lokal Anda telah terinstal:**<br>- **Server Lokal: XAMPP / Laragon / WAMP**<br>- **PHP: Versi 7.4 atau yang lebih baru**<br>- **Database: MySQL / MariaDB** |
+| **2. Langkah Setup** | **1. Salin folder `inventory-app` ke lokasi server lokal:**<br>&nbsp;&nbsp;&nbsp;&nbsp;`C:/xampp/htdocs/inventory-app/`<br><br>**2. Buka phpMyAdmin (`http://localhost/phpmyadmin/`) lalu buat database baru:**<br>&nbsp;&nbsp;&nbsp;&nbsp;Nama Database: `inventory_db`<br><br>**3. Buat tabel utama yang dibutuhkan (`users`, `categories`, `products`, `stock_movements`).**<br><br>**4. Jalankan modul Apache dan MySQL melalui Control Panel.** |
+| **3. Login Pengujian** | **Navigasikan browser ke alamat:**<br>`http://localhost/inventory-app/public/login.php`<br><br>**Kredensial Akun Uji Coba:**<br>- **Username**: `admin`<br>- **Password**: `password`<br>- **Role**: `Admin` (Akses Penuh) |
+| **📁 Struktur Folder Proyek** | `inventory-app/`<br>├── `config/db.php` *(Konfigurasi koneksi database PDO)*<br>├── `helpers/` *(auth.php, escape.php, validation.php)*<br>├── `img/` *(Kumpulan gambar screenshot antarmuka UI)*<br>├── `public/` *(assets/style.css, stock/in.php, stock/out.php)*<br>├── `public/` *(create.php, dashboard.php, edit.php, index.php, login.php)*<br>└── `README.md` *(Dokumentasi terstruktur proyek)* |
+| ** 👤 Lisensi & Hak Cipta** | **Dikembangkan untuk MahzaGlow Skincare System. Bebas disesuaikan dan dikembangkan lebih lanjut untuk kebutuhan manajemen inventaris toko/brand skincare.** |
