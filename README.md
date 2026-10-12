@@ -1,7 +1,6 @@
 
-Berikut adalah isi lengkap dari file **`README.md`** yang bisa langsung Anda salin (*copy-paste*) ke dalam file **`README.md`** di folder proyek Anda:
 
-```markdown
+
 #  MahzaGlow - Skincare Inventory Management System
 
 **MahzaGlow** adalah sistem manajemen inventaris produk *skincare* berbasis web yang dirancang dengan antarmuka **Fintech & SaaS Premium**. Aplikasi ini memudahkan pengelolaan katalog produk, pemantauan stok secara *real-time*, serta pencatatan transaksi barang masuk (*stock in*) dan barang keluar (*stock out*).
