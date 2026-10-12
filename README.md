@@ -100,17 +100,3 @@ Gunakan kredensial pengujian berikut:
 Dikembangkan untuk **MahzaGlow Skincare System**. Bebas disesuaikan dan dikembangkan lebih lanjut untuk kebutuhan manajemen inventaris toko/brand skincare.
 
 ```
-
-## Tampilan Aplikasi
-### Login
-![alt text](image.png)
-### Dasboard
-![alt text](image-1.png)
-### Katalog
-![alt text](image-2.png)
-### Barang Masuk
-![alt text](image-3.png)
-### Barang Keluar
-![alt text](image-4.png)
-### Edit
-![alt text](image-5.png)
