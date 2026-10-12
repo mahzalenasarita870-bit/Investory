@@ -4,7 +4,7 @@
 
 ---
 
-## **📸 Tampilan Antarmuka Aplikasi**
+## **Tampilan Antarmuka Aplikasi**
 
 ### **1. Halaman Login**
 ![Halaman Login](img/login.jpg)
@@ -26,7 +26,7 @@
 
 ---
 
-## **🚀 Fitur Utama & Spesifikasi Sistem**
+## **Fitur Utama & Spesifikasi Sistem**
 
 | **Kategori** | **Detail Modul / Fitur** |
 | :--- | :--- |
@@ -38,12 +38,12 @@
 
 ---
 
-## **⚙️ Panduan Instalasi & Penggunaan (Satu Tabel)**
+## **Panduan Instalasi & Penggunaan**
 
 | **Langkah / Modul** | **Instruksi Lengkap & Kredensial** |
 | :--- | :--- |
 | **1. Persyaratan Sistem** | **Pastikan perangkat lokal Anda telah terinstal:**<br>- **Server Lokal: XAMPP / Laragon / WAMP**<br>- **PHP: Versi 7.4 atau yang lebih baru**<br>- **Database: MySQL / MariaDB** |
 | **2. Langkah Setup** | **1. Salin folder `inventory-app` ke lokasi server lokal:**<br>&nbsp;&nbsp;&nbsp;&nbsp;`C:/xampp/htdocs/inventory-app/`<br><br>**2. Buka phpMyAdmin (`http://localhost/phpmyadmin/`) lalu buat database baru:**<br>&nbsp;&nbsp;&nbsp;&nbsp;Nama Database: `inventory_db`<br><br>**3. Buat tabel utama yang dibutuhkan (`users`, `categories`, `products`, `stock_movements`).**<br><br>**4. Jalankan modul Apache dan MySQL melalui Control Panel.** |
 | **3. Login Pengujian** | **Navigasikan browser ke alamat:**<br>`http://localhost/inventory-app/public/login.php`<br><br>**Kredensial Akun Uji Coba:**<br>- **Username**: `admin`<br>- **Password**: `password`<br>- **Role**: `Admin` (Akses Penuh) |
-| **📁 Struktur Folder Proyek** | `inventory-app/`<br>├── `config/db.php` *(Konfigurasi koneksi database PDO)*<br>├── `helpers/` *(auth.php, escape.php, validation.php)*<br>├── `img/` *(Kumpulan gambar screenshot antarmuka UI)*<br>├── `public/` *(assets/style.css, stock/in.php, stock/out.php)*<br>├── `public/` *(create.php, dashboard.php, edit.php, index.php, login.php)*<br>└── `README.md` *(Dokumentasi terstruktur proyek)* |
-| ** 👤 Lisensi & Hak Cipta** | **Dikembangkan untuk MahzaGlow Skincare System. Bebas disesuaikan dan dikembangkan lebih lanjut untuk kebutuhan manajemen inventaris toko/brand skincare.** |
+| **Struktur Folder Proyek** | `inventory-app/`<br>├── `config/db.php` *(Konfigurasi koneksi database PDO)*<br>├── `helpers/` *(auth.php, escape.php, validation.php)*<br>├── `img/` *(Kumpulan gambar screenshot antarmuka UI)*<br>├── `public/` *(assets/style.css, stock/in.php, stock/out.php)*<br>├── `public/` *(create.php, dashboard.php, edit.php, index.php, login.php)*<br>└── `README.md` *(Dokumentasi terstruktur proyek)* |
+| **Lisensi & Hak Cipta** | **Dikembangkan untuk MahzaGlow Skincare System. Bebas disesuaikan dan dikembangkan lebih lanjut untuk kebutuhan manajemen inventaris toko/brand skincare.** |
